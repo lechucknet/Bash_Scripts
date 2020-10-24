@@ -1,0 +1,145 @@
+11:53:45 INFO  The following decision flows are not active in the repository.
+11:53:45 INFO  --------------------------------------------------------------------------------
+11:53:45 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+11:53:45 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+11:53:45 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+11:53:45 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+11:53:45 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+11:53:45 INFO  --------------------------------------------------------------------------------
+11:53:56 INFO  The SAS Decision Services engine was updated successfully.
+13:14:35 INFO  The following decision flows are not active in the repository.
+13:14:35 INFO  --------------------------------------------------------------------------------
+13:14:35 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+13:14:35 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+13:14:35 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+13:14:35 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+13:14:35 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+13:14:35 INFO  --------------------------------------------------------------------------------
+13:14:46 INFO  The SAS Decision Services engine was updated successfully.
+13:16:18 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is not active.
+#################### THIS LOG WAS CREATED Fri Jun 22 17:32:05 ART 2018 ####################
+17:33:41 INFO  The following decision flows are not active in the repository.
+17:33:41 INFO  --------------------------------------------------------------------------------
+17:33:41 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+17:33:41 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+17:33:41 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+17:33:41 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+17:33:41 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+17:33:41 INFO  --------------------------------------------------------------------------------
+17:33:51 INFO  The SAS Decision Services engine was updated successfully.
+#################### THIS LOG WAS CREATED Wed Jun 27 11:39:50 ART 2018 ####################
+11:41:00 INFO  The following decision flows are not active in the repository.
+11:41:00 INFO  --------------------------------------------------------------------------------
+11:41:00 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+11:41:00 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+11:41:00 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+11:41:00 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+11:41:00 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+11:41:00 INFO  --------------------------------------------------------------------------------
+11:42:01 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.deactivate(Activator.java:365)
+	at com.sas.tap.command.activation.BatchActivator.deactivate(BatchActivator.java:144)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:356)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Wed Jun 27 11:39:50 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jun 27 15:00:41 ART 2018 ####################
+15:00:51 INFO  The following decision flows are not active in the repository.
+15:00:51 INFO  --------------------------------------------------------------------------------
+15:00:51 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+15:00:51 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+15:00:51 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+15:00:51 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+15:00:51 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+15:00:51 INFO  --------------------------------------------------------------------------------
+15:00:51 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.deactivate(Activator.java:365)
+	at com.sas.tap.command.activation.BatchActivator.deactivate(BatchActivator.java:144)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:356)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.validateResponse(CommonsHttpInvokerRequestExecutor.java:223)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:141)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Wed Jun 27 15:00:41 ART 2018 ####################
+#################### THIS LOG WAS CREATED Tue Jul 17 17:54:29 ART 2018 ####################
+17:55:37 INFO  The following decision flows are not active in the repository.
+17:55:37 INFO  --------------------------------------------------------------------------------
+17:55:37 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+17:55:37 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+17:55:37 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+17:55:37 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+17:55:37 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+17:55:37 INFO  --------------------------------------------------------------------------------
+17:55:49 INFO  The SAS Decision Services engine was updated successfully.
+#################### END of LOG Tue Jul 17 17:54:29 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jul 25 16:16:29 ART 2018 ####################
+16:22:02 INFO  The following decision flows are not active in the repository.
+16:22:02 INFO  --------------------------------------------------------------------------------
+16:22:02 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+16:22:02 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+16:22:02 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+16:22:02 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+16:22:02 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+16:22:02 INFO  --------------------------------------------------------------------------------
+16:22:15 INFO  The SAS Decision Services engine was updated successfully.
+#################### END of LOG Wed Jul 25 16:16:29 ART 2018 ####################

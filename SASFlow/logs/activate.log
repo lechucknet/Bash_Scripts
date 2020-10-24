@@ -1,0 +1,384 @@
+11:53:18 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+12:01:57 INFO  The following decision flows are active in the repository.
+12:01:57 INFO  --------------------------------------------------------------------------------
+12:01:57 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+12:01:57 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+12:01:57 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+12:01:57 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+12:01:57 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+12:01:57 INFO  --------------------------------------------------------------------------------
+12:02:57 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+12:04:17 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+12:06:13 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+12:07:29 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+12:08:45 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+13:13:45 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+13:17:30 INFO  The following decision flows are active in the repository.
+13:17:30 INFO  --------------------------------------------------------------------------------
+13:17:30 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+13:17:30 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+13:17:30 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+13:17:30 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+13:17:30 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+13:17:30 INFO  --------------------------------------------------------------------------------
+13:18:30 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+14:43:53 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+17:27:19 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+#################### THIS LOG WAS CREATED Fri Jun 22 17:32:05 ART 2018 ####################
+17:32:59 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+#################### THIS LOG WAS CREATED Fri Jun 22 17:37:28 ART 2018 ####################
+17:38:30 INFO  The following decision flows are active in the repository.
+17:38:30 INFO  --------------------------------------------------------------------------------
+17:38:30 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+17:38:30 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+17:38:30 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+17:38:30 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+17:38:30 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+17:38:30 INFO  --------------------------------------------------------------------------------
+17:39:30 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Fri Jun 22 17:37:28 ART 2018 ####################
+#################### THIS LOG WAS CREATED Fri Jun 22 17:37:28 ART 2018 ####################
+17:41:00 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+#################### END of LOG Fri Jun 22 17:37:28 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jun 27 11:39:50 ART 2018 ####################
+11:40:40 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+#################### END of LOG Wed Jun 27 11:39:50 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jun 27 11:39:50 ART 2018 ####################
+11:43:18 INFO  The following decision flows are active in the repository.
+11:43:18 INFO  --------------------------------------------------------------------------------
+11:43:18 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+11:43:18 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+11:43:18 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+11:43:18 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+11:43:18 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+11:43:18 INFO  --------------------------------------------------------------------------------
+11:44:18 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Wed Jun 27 11:39:50 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jun 27 15:00:41 ART 2018 ####################
+15:01:56 INFO  The following decision flows are active in the repository.
+15:01:56 INFO  --------------------------------------------------------------------------------
+15:01:56 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+15:01:56 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+15:01:56 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+15:01:56 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+15:01:56 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+15:01:56 INFO  --------------------------------------------------------------------------------
+15:01:56 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: org.apache.commons.httpclient.HttpException: Did not receive successful HTTP response: status code = 503, status message = [Service Temporarily Unavailable]
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.validateResponse(CommonsHttpInvokerRequestExecutor.java:223)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:141)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Wed Jun 27 15:00:41 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jun 27 15:42:08 ART 2018 ####################
+15:43:15 ERROR The decision flow Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO is already active.
+#################### END of LOG Wed Jun 27 15:42:08 ART 2018 ####################
+#################### THIS LOG WAS CREATED Tue Jul 17 17:54:29 ART 2018 ####################
+17:57:01 INFO  The following decision flows are active in the repository.
+17:57:01 INFO  --------------------------------------------------------------------------------
+17:57:01 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+17:57:01 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+17:57:01 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+17:57:01 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+17:57:01 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+17:57:01 INFO  --------------------------------------------------------------------------------
+17:58:02 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Tue Jul 17 17:54:29 ART 2018 ####################
+#################### THIS LOG WAS CREATED Wed Jul 25 16:16:29 ART 2018 ####################
+16:25:15 INFO  The following decision flows are active in the repository.
+16:25:15 INFO  --------------------------------------------------------------------------------
+16:25:15 INFO  Prepago_23_Subdiagrama_Recarga__1E_1_FCHHTHDZTFBMWFAO
+16:25:15 INFO  Prepago_23_Subdiagrama_Paquetizado_1E_1_DCDGRUJWX3HPTDNQ
+16:25:15 INFO  Prepago_23_Subdiagrama_Dormidos_1E_1_FFDFPFIIZVHSVUUR
+16:25:15 INFO  Prepago_23_Subdiagrama_Consumo_1E_1_ECGEDFW2JFA3VRJS
+16:25:15 INFO  Prepago_23_Gral_1E_1_AEFHMSGNTBGVXOSZ
+16:25:15 INFO  --------------------------------------------------------------------------------
+16:26:15 WARN  The SAS Decision Services engine could not be updated. Engine may be off-line. Changes will be in effect when the engine is restarted.
+com.sas.analytics.ph.RTDMException: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:69)
+	at com.sun.proxy.$Proxy25.synchronizeCache(Unknown Source)
+	at com.sas.tap.util.EngineDAOImpl.notifyEngine(EngineDAOImpl.java:92)
+	at com.sas.tap.util.Activator.notifyEngine(Activator.java:147)
+	at com.sas.tap.util.Activator.activate(Activator.java:304)
+	at com.sas.tap.command.activation.BatchActivator.activate(BatchActivator.java:134)
+	at com.sas.tap.command.activation.BatchActivator.main(BatchActivator.java:354)
+Caused by: org.springframework.remoting.RemoteAccessException: Could not access HTTP invoker remote service at [http://aprtdmsc01.tmoviles.com.ar:7980/RTDM/Manager]; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.convertHttpInvokerAccessException(HttpInvokerClientInterceptor.java:212)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at com.sun.proxy.$Proxy24.synchronizeCache(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.sas.rtdm.EngineConnector$1.invoke(EngineConnector.java:66)
+	... 6 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+	at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+	at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)
+	at org.apache.commons.httpclient.HttpMethodBase.readStatusLine(HttpMethodBase.java:1973)
+	at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1735)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.executePostMethod(CommonsHttpInvokerRequestExecutor.java:205)
+	at org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor.doExecuteRequest(CommonsHttpInvokerRequestExecutor.java:140)
+	at org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor.executeRequest(AbstractHttpInvokerRequestExecutor.java:136)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:192)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.executeRequest(HttpInvokerClientInterceptor.java:174)
+	at org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor.invoke(HttpInvokerClientInterceptor.java:142)
+	... 14 more
+#################### END of LOG Wed Jul 25 16:16:29 ART 2018 ####################

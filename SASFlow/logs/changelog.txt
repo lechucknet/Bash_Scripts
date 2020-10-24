@@ -1,0 +1,7 @@
+##### SAS FLOW ACTIVATOR # CHANGELOG #####
+# VERSION variable behind is read by the program as default version.
+VERSION=".0.3"
+* Added LOGing what every command does
+* Added LOGS to main menu
+* Removed Export, is in develop phase
+* To Import packages is necessary to have at least SAS9.4 M4
