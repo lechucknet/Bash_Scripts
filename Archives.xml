@@ -2,4 +2,7 @@
 <ArchInfo Date="1624369278993" Description="" Name="test" PackageName="test.spk" UserID="sasdemo" Version="bd4a872">
 <ContainObj>SBIP://METASERVER/CWC/CMS/Jobs/POSTPAID/Test_git_gon(Job)</ContainObj>
 </ArchInfo>
+<ArchInfo Date="1625599540995" Description="" Name="Test_gon" PackageName="Test_gon.spk" UserID="sasdemo" Version="96b5721">
+<ContainObj>SBIP://METASERVER/CWC/CMS/Jobs/FIX/Prueba_GIT(Job)</ContainObj>
+</ArchInfo>
 </ROOT>
